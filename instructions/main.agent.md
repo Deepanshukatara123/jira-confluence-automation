@@ -9,3 +9,9 @@
 	+ Keywords: weekly status, status snapshot, project report, stakeholder update
 - [review-risk-dependencies.agent.md](review-risk-dependencies.agent.md): Reviews risk and dependency records for urgent findings and actions.
 	+ Keywords: risk review, dependency review, blockers, critical path, escalation
+- [calculate-compound-interest.agent.md](calculate-compound-interest.agent.md): Runs the compound-interest calculator and presents the final amount and interest earned.
+	+ Keywords: compound interest, interest calculation, principal, annual rate, compounding
+- [use-calculate-risk-score.agent.md](use-calculate-risk-score.agent.md): Calculates a consistent risk score from likelihood and impact ratings.
+	+ Keywords: Jira risk score, Confluence risk score, likelihood, impact, risk calculation
+- [use-calculate-milestone-variance.agent.md](use-calculate-milestone-variance.agent.md): Calculates milestone variance from baseline and actual or forecast dates.
+	+ Keywords: Jira milestone variance, Confluence milestone variance, baseline date, forecast date, schedule variance
