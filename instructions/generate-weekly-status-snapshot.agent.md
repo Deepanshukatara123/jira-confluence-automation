@@ -1,0 +1,11 @@
+- Accept a reporting period, project/workstream updates, milestone health, blockers, risks, capacity signals, decisions, and open actions as structured text, CSV, or XLSX input.
+- Require the reporting period and project name; mark unavailable values as `Not provided` instead of guessing.
+- Group updates by workstream and preserve named owners, dates, status values, and metrics.
+- Summarize completed outcomes as accomplishments and separate unresolved work into blockers, risks, decisions, and actions.
+- Flag overdue items, at-risk or delayed milestones, blocked dependencies, capacity overloads, and actions due before the next review.
+- Calculate no new metrics unless the input provides the values and definitions needed for the calculation.
+- Output Markdown with exactly these headings, in order: `# Weekly Status Snapshot`, `## Accomplishments`, `## Blockers and Risks`, `## Milestones and Metrics`, `## Decisions Needed`, and `## Next Week`.
+- Use bullet points only under headings; do not use paragraphs or tables.
+- Include owner and due date in every blocker, decision, or next-week item when available.
+- Keep the snapshot to a maximum of 30 lines, including headings and blank lines.
+- Use a professional, factual tone and remove filler or promotional language.

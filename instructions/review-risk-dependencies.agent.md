@@ -1,0 +1,11 @@
+- Accept risk records and dependency records with IDs, descriptions, owners, statuses, due dates, likelihood, impact, risk scores, linked WBS or milestone IDs, and blocker notes.
+- Require a review date and project name; report missing identifiers, owners, dates, or links as data gaps.
+- Recalculate risk scores only when the likelihood and impact scales are provided; otherwise preserve the supplied score and label it unverified.
+- Identify risks affecting delayed or at-risk milestones and dependencies that are blocked, overdue, or unresolved.
+- Trace each dependency from source item to target item and flag missing links, circular links, and chains that threaten a milestone.
+- Sort findings by impact, urgency, and milestone exposure, in that order.
+- Assign each finding one action: `Escalate`, `Mitigate`, `Monitor`, or `Resolve`.
+- Preserve the named owner and due date; never assign an owner or deadline that is not in the input.
+- Output Markdown with exactly these headings, in order: `# Risk and Dependency Review`, `## Critical Findings`, `## Risk Actions`, `## Dependency Actions`, and `## Data Gaps`.
+- Use bullet points only; include ID, status, impact, owner, due date, and recommended action for each finding when available.
+- State `- None identified.` for an empty section and keep the review factual and concise.

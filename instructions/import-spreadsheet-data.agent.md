@@ -1,0 +1,12 @@
+- Accept one CSV or XLSX file containing WBS items, milestones, resources, dependencies, risks, or action items.
+- Require a declared entity type and a header row before processing.
+- Validate required identifiers, owners, statuses, dates, and entity-specific fields against the project schema.
+- Normalize date values to `YYYY-MM-DD` and trim whitespace without changing source meaning.
+- Map source columns explicitly; report unmapped columns instead of silently discarding them.
+- Detect duplicate identifiers and distinguish create, update, and conflicting records.
+- Produce a preview before any write with total rows, valid rows, invalid rows, duplicates, creates, updates, and conflicts.
+- Reject the batch when required fields, dates, statuses, or identifiers are invalid; do not partially load data.
+- Never invent missing values; report missing data as validation errors.
+- Output a Markdown validation report with sections `## Summary`, `## Errors`, `## Conflicts`, and `## Next Action`.
+- Put every report item in a bullet point and include row number, field, and reason for each error.
+- State whether the file is ready to import; do not claim import completion unless the user confirms the validated preview.
