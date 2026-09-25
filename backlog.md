@@ -10,9 +10,13 @@
 - The deferred external-integration task is marked `MCP` because a standard Atlassian MCP server can provide the connector surface when that work is brought into scope.
 - Every backlog task below is labeled `MCP` or `custom skill` at the end of its checklist item.
 
+## GitHub Coding Agent Delegation
+
+The following self-contained tasks are good candidates to delegate to the GitHub coding agent in Module 19: WBS CRUD, milestone CRUD, resource allocation management, dependency CRUD, risk and issue register implementation, action item CRUD, CSV/XLSX import validation, and the focused unit/API/frontend test suites. Each delegated issue should include acceptance criteria, relevant data-model context, and a clear test requirement.
+
 ## Phase 1: Setup
 
-- [ ] Create the application repository structure for the frontend, API, database layer, shared types, and documentation. — custom skill
+- [ ] Create the application repository structure for the frontend, API, database layer, shared types, and documentation. — custom skill — GitHub issue #1 (closed)
 - [ ] Configure the frontend framework, API runtime, local development scripts, linting, formatting, and environment variables. — custom skill
 - [ ] Provision the development database and add migrations for Project, Workstream, WBS Item, Milestone, Resource Allocation, Dependency, Risk, Action Item, User, and Team Role entities. — custom skill
 - [ ] Define shared enums and validation schemas for statuses, priorities, likelihood, impact, escalation levels, dependency types, and role permissions. — custom skill
