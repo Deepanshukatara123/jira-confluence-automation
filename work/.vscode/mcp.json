@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "echo-mac-linux": {
+      "command": "bash",
+      "args": ["./mcp-echo.sh"]
+    },
+    "time-mac-linux": {
+      "command": "bash",
+      "args": ["./mcp-time.sh"]
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    }
+  }
+}
